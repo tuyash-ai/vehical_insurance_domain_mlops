@@ -1,7 +1,10 @@
 [project]
+authors=[
+    {name="Tuyash Mondal",email="tuyashmondal1@gmail.com"}
+]
 name = "vehical-insurance-domain-mlops"
 version = "0.1.0"
-description = "Add your description here"
+description = "MLOPS project"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -12,6 +15,8 @@ dependencies = [
     "numpy>=2.4.6",
     "pandas>=3.0.3",
     "plotly>=6.7.0",
+    "pymongo>=4.17.0",
+    "python-dotenv>=1.0.0",
     "scikit-learn>=1.8.0",
     "seaborn>=0.13.2",
     "uvicorn>=0.48.0",

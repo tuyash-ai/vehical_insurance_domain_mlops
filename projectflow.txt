@@ -1,0 +1,49 @@
+Mongodb Atlas config:
+    username: tuyashmondal1_db_user
+    password: NTK7tm7pfuOhvT4T
+
+    install driver: python -m pip install "pymongo[srv]"
+    connection string: mongodb+srv://tuyashmondal1_db_user:NTK7tm7pfuOhvT4T@cluster1.zyy1te3.mongodb.net/?appName=Cluster1
+
+
+
+    
+    vehicle-insurance-mlops/
+│
+├── app/                     # FastAPI / backend code
+│   ├── main.py
+│   ├── routes/
+│   ├── schemas/
+│   └── services/
+│
+├── ml/                      # ML training code
+│   ├── train.py
+│   ├── predict.py
+│   ├── model.py
+│   └── preprocessing.py
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── config/
+│   ├── settings.py
+│   └── __init__.py
+│
+├── models/                  # saved ML models
+│   └── model.pkl
+│
+├── notebooks/              # experimentation only
+│
+├── tests/                  # unit tests
+│   └── test_api.py
+│
+├── .env                    # ❌ not committed
+├── .env.example            # ✔ committed
+├── .gitignore
+│
+├── pyproject.toml
+├── uv.lock
+├── README.md
+│
+└── Dockerfile              # later stage (deployment)
